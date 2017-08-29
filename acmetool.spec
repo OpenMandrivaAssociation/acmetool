@@ -1,11 +1,11 @@
 Name:           acmetool
-Version:        0.0.58
+Version:        0.0.61
 Release:        1
 Summary:        Automatic certificate acquisition tool for ACME (Let's Encrypt)
 Group:          System/Servers
 License:        MIT
 URL:            https://github.com/hlandau/acme
-Source0:	acmetool-20160918.tar.xz
+Source0:	https://github.com/hlandau/acme/archive/v%{version}.tar.gz
 # Needs to package some go libraries along with it...
 Source100:	get-source.sh
 BuildRequires:	go
@@ -15,11 +15,10 @@ BuildRequires:	pkgconfig(libcap)
 Automatic certificate acquisition tool for ACME (Let's Encrypt)
 
 %prep
-%setup -qn acmetool
+%setup -qn acme-%{version}
 
 %build
 export GOPATH=`pwd`
-mv src/github.com/hlandau/acme/Makefile .
 %make PREFIX=%{_prefix}
 
 %install

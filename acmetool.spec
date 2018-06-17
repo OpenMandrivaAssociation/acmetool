@@ -1,5 +1,5 @@
 Name:           acmetool
-Version:        0.0.61
+Version:        0.0.67
 Release:        1
 Summary:        Automatic certificate acquisition tool for ACME (Let's Encrypt)
 Group:          System/Servers

@@ -8,6 +8,7 @@ URL:            https://github.com/hlandau/acme
 Source0:	https://github.com/hlandau/acme/archive/v%{version}.tar.gz
 # Needs to package some go libraries along with it...
 Source100:	get-source.sh
+BuildRequires:	make
 BuildRequires:	golang
 BuildRequires:	pkgconfig(libcap)
 

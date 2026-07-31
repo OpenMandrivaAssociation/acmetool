@@ -1,6 +1,6 @@
 Name:           acmetool
-Version:	0.2.1
-Release:	2
+Version:	0.2.2
+Release:	1
 Summary:        Automatic certificate acquisition tool for ACME (Let's Encrypt)
 Group:          System/Servers
 License:        MIT
